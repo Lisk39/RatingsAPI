@@ -8,7 +8,7 @@ http.createServer(function (req, res) {
 
 var express = require('express');
 require('dotenv').config();
-var ratings = require('./APILibrary/ratingsAPI');
+
 
 
 
@@ -39,18 +39,7 @@ async function main() {
         app.use('/ratings', ratingsRouter)
         
 
-/*
-let testData = await gateway.getData();
 
-app.get('/', function (req, res) {
-
-    //console.log(req.session);
-    //req.session.isAuth = true;
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(testData, null, 3));
-    
-});
-*/
         app.listen(process.env.PORT);
         console.log("listening on "+ process.env.PORT);
 

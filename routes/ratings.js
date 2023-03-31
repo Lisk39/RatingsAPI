@@ -30,7 +30,7 @@ router.post('/adddata', async function(req, res, next) {
    
  });
 
- /* POST find rating */
+ /* POST find rating item*/
 router.post('/findRate', async function(req, res, next) {
   
   const data = req.body;
